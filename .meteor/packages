@@ -7,3 +7,5 @@ preserve-inputs
 bootstrap
 accounts-password
 accounts-ui-bootstrap-dropdown
+http
+force-ssl
