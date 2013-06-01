@@ -1,7 +1,5 @@
 Meteor.methods({
   createCharge: function(cardToken) {
-    console.log(response)
-
     data = {
       email: "fake@example.com",
       description: "Meteor Test",

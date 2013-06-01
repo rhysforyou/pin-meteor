@@ -21,7 +21,7 @@ Template.purchase.events({
       if (data.error) {
         alert(response.error_description)
       } else {
-        Meteor.call('createCharge', data.response.card_token)
+        Meteor.call('createCharge', data.response.token)
       }
     })
   }

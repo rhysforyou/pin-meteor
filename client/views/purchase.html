@@ -1,39 +1,81 @@
 <template name="purchase">
-  <form class='pin'>
-    <div class='errors' style='display:none'>
-      <h3></h3>
-      <ul></ul>
-    </div>
+  <form class="span6 offset3 form-horizontal">
     <fieldset>
       <legend>Billing</legend>
 
-      <label for='address-line1'>Address 1</label>
-      <input name='address-line1' />
-      <label for='address-line2'>Address 2</label>
-      <input name='address-line2' />
-      <label for='address-city'>City</label>
-      <input name='address-city' />
-      <label for='address-state'>State</label>
-      <input name='address-state' />
-      <label for='address-postcode'>Postcode</label>
-      <input name='address-postcode' />
-      <label for='address-country'>Country</label>
-      <input name='address-country' />
+      <div class="control-group">
+        <label class="control-label" for="address-line1">Address 1</label>
+        <div class="controls">
+          <input type="text" name="address-line1" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="address-line2">Address 2</label>
+        <div class="controls">
+          <input type="text" name="address-line2" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="address-city">City</label>
+        <div class="controls">
+          <input type="text" name="address-city" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="address-state">State</label>
+        <div class="controls">
+          <input type="text" name="address-state" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="address-postcode">Postcode</label>
+        <div class="controls">
+          <input type="text" name="address-postcode" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="address-country">Country</label>
+        <div class="controls">
+          <input type="text" name="address-country" />
+        </div>
+      </div>
     </fieldset>
+
     <fieldset>
       <legend>Payment</legend>
 
-      <label for='cc-number'>Credit Card Number</label>
-      <input name='cc-number' type='text' />
-      <label for='cc-name'>Name on Card</label>
-      <input name='cc-name' type='text' />
-      <label for='cc-expiry-month'>Expiry Month</label>
-      <input name='cc-expiry-month' />
-      <label for='cc-expiry-year'>Expiry Year</label>
-      <input name='cc-expiry-year' />
-      <label for='cc-cvc'>CVC</label>
-      <input name='cc-cvc' />
+      <div class="control-group">
+        <label class="control-label" for="cc-number">Credit Card Number</label>
+        <div class="controls">
+          <input type="text" name="cc-number" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="cc-name">Name on Card</label>
+        <div class="controls">
+          <input type="text" name="cc-name" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="cc-expiry-month">Expiry Month</label>
+        <div class="controls">
+          <input type="text" name="cc-expiry-month" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="cc-expiry-year">Expiry Year</label>
+        <div class="controls">
+          <input type="text" name="cc-expiry-year" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="cc-cvc">CVC</label>
+        <div class="controls">
+          <input type="text" name="cc-cvc" />
+        </div>
+      </div>
     </fieldset>
-    <input type='submit' value='Pay now' />
+    <hr>
+    <button type="submit" class="btn btn-large btn-primary btn-block">Pay Now</button>
   </form>
 </template>
