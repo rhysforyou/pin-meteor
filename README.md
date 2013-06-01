@@ -1,11 +1,14 @@
 # Pin Meteor Integration Example
 
-This code illustrates how to integrate [Pin][pinsite] payment processing to a
+This code illustrates how to integrate [Pin][pin-site] payment processing to a
 Meteor app. Pin's a great service and the core of this app took around half an
 hour to get working.
 
 The eventual goal of this project is to build an [atmosphere][atmospher-repo]
 package that makes adding Pin to an app as easy as possible.
+
+[pin-site]: http://pin.net.au/
+[atmosphere-repo]: https://github.com/oortcloud/atmosphere
 
 ## Roadmap
 
