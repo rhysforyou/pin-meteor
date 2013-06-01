@@ -17,11 +17,11 @@ Template.purchase.events({
       address_country: $(event.target).find("[name=address-country]").val()
     }
 
-    Pin.createToken(card, function(response) {
-      if (response.error) {
+    Pin.createToken(card, function(data) {
+      if (data.error) {
         alert(response.error_description)
       } else {
-        Meteor.call('createCharge', response)
+        Meteor.call('createCharge', data.response.card_token)
       }
     })
   }

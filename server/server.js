@@ -1,5 +1,5 @@
 Meteor.methods({
-  createCharge: function(response) {
+  createCharge: function(cardToken) {
     console.log(response)
 
     data = {
@@ -8,7 +8,7 @@ Meteor.methods({
       amount: 500,
       currency: "AUD",
       ip_address: "127.0.0.1",
-      card_token: response.response.token
+      card_token: cardToken
     }
 
     console.log(data)
