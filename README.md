@@ -23,3 +23,21 @@ example:
 - Support for recurring payments
 
 Once all of those are out of the way, we'll look at turning this into a package.
+
+## Usage
+
+Right now this is all pretty rough, you'll need to first go into 
+`/client/main.js` and change the following line to use your publishable API 
+key:
+
+    Pin.setPublishableKey('YOUR_PUBLISHABLE_KEY');
+
+This key can be found on your [account page][account].
+
+Next up you'll need to set the `PIN_API_SECRET` environment variable to your
+private key, which should be on the same page as the publishable key.
+
+After that just use the meteorite `mrt server` command and everything should
+work without a hitch.
+
+[account]: https://dashboard.pin.net.au/account
