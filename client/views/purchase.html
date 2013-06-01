@@ -1,0 +1,39 @@
+<template name="purchase">
+  <form class='pin'>
+    <div class='errors' style='display:none'>
+      <h3></h3>
+      <ul></ul>
+    </div>
+    <fieldset>
+      <legend>Billing</legend>
+
+      <label for='address-line1'>Address 1</label>
+      <input name='address-line1' />
+      <label for='address-line2'>Address 2</label>
+      <input name='address-line2' />
+      <label for='address-city'>City</label>
+      <input name='address-city' />
+      <label for='address-state'>State</label>
+      <input name='address-state' />
+      <label for='address-postcode'>Postcode</label>
+      <input name='address-postcode' />
+      <label for='address-country'>Country</label>
+      <input name='address-country' />
+    </fieldset>
+    <fieldset>
+      <legend>Payment</legend>
+
+      <label for='cc-number'>Credit Card Number</label>
+      <input name='cc-number' type='text' />
+      <label for='cc-name'>Name on Card</label>
+      <input name='cc-name' type='text' />
+      <label for='cc-expiry-month'>Expiry Month</label>
+      <input name='cc-expiry-month' />
+      <label for='cc-expiry-year'>Expiry Year</label>
+      <input name='cc-expiry-year' />
+      <label for='cc-cvc'>CVC</label>
+      <input name='cc-cvc' />
+    </fieldset>
+    <input type='submit' value='Pay now' />
+  </form>
+</template>
