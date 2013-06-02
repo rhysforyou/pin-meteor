@@ -2,6 +2,8 @@ Template.purchase.events({
   'submit form': function(event) {
     event.preventDefault();
 
+    $(event.target).find('button').prop('disabled', true)
+
     // Create the card data we'll send to Pin's servers
     var card = {
       number: $(event.target).find("[name=cc-number]").val(),
@@ -19,7 +21,7 @@ Template.purchase.events({
 
     Pin.createToken(card, function(data) {
       if (data.error) {
-        alert(response.error_description)
+        alert(data.error_description)
       } else {
         Meteor.call('createCharge', data.response.token)
       }
